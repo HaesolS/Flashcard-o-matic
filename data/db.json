@@ -1,0 +1,70 @@
+{
+  "decks": [
+    {
+      "name": "React Router",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "id": 2
+    },
+    {
+      "name": "Most expensive items sold on eBay",
+      "description": "More than a million people trade on eBay as a full time job trading ~$2,000 worth of goods every second!",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
+      "back": "All paths. A route with no path matches all URL's",
+      "deckId": 2,
+      "id": 4
+    },
+    {
+      "front": "What does <Switch> do?",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "Test front",
+      "back": "Test back",
+      "deckId": 2,
+      "id": 6
+    },
+    {
+      "front": "Gigayacht",
+      "back": "$168 million",
+      "deckId": 3,
+      "id": 7
+    },
+    {
+      "front": "Gulfstream II",
+      "back": "$4.9 million",
+      "deckId": 3,
+      "id": 8
+    },
+    {
+      "front": "Town of Albert, TX",
+      "back": "$2.5 million",
+      "deckId": 3,
+      "id": 9
+    },
+    {
+      "front": "House with a war-proof bunker",
+      "back": "$2.1 million",
+      "deckId": 3,
+      "id": 10
+    },
+    {
+      "front": "Town of Bridgeville, CA",
+      "back": "$1.77 million",
+      "deckId": 3,
+      "id": 11
+    },
+    {
+      "front": "Ferrari Enzo",
+      "back": "$1 million",
+      "deckId": 3,
+      "id": 12
+    }
+  ]
+}

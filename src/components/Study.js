@@ -69,7 +69,7 @@ export const Study = () => {
                 {cards.map((card, index) => {
                     if (index === cardNumber -1) {
                         return (
-                            <div classname="card-body" key={card.id}>
+                            <div className="card-body" key={card.id}>
                                 <div className="card-title">
                                     {`Card ${index + 1} of ${cards.length}`}
                                 </div>
@@ -108,7 +108,7 @@ export const Study = () => {
                 <li classname="breadcrumb-item">
                     <Link to="/">Home</Link>
                 </li>
-                <li classname="breadcrumb-item">
+                <li className="breadcrumb-item">
                     <Link to={`/decks/${deckId}`}>{deck.name}</Link>
                 </li>
                 <li className="breadcrumb-item active">Study</li>

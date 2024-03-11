@@ -4,7 +4,7 @@ import { readDeck, updateDeck } from "../utils/api/index";
 
 export const EditDeck = () => {
     const { deckId } = useParams();
-    const navigation = useNavigate();
+    const navigate = useNavigate();
     const initialDeckState = {
         id: "",
         name: "",
@@ -31,7 +31,7 @@ export const EditDeck = () => {
     function handleSubmit(event) {
         event.preventDefault();
         const response = updateDeck({ ...deck }, abortController.signal);
-        navigation.navigate(`/decks/${deckId}`);
+        navigate(`/decks/${deckId}`);
         return response;
     }
 
@@ -42,7 +42,7 @@ export const EditDeck = () => {
     }
 
     function handleCancel() {
-        navigation.navigate(`/decks/${deckId}`);
+        navigate(`/decks/${deckId}`);
     }
 
     return (

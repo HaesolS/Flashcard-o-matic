@@ -95,7 +95,7 @@ export const Deck = () => {
                                         <div className="col">{card.front}</div>
                                         <div classname="col">{card.back}</div>
                                     </div>
-                                    <div classname="container row">
+                                    <div className="container row">
                                         <button onClick={() => handleEditCard(card)} className="btn btn-secondary">
                                             Edit
                                         </button>

@@ -5,7 +5,7 @@ import { createCard, readDeck } from "../utils/api/index";
 export const AddCard = () => {
     const [deck, setDeck] = useState({});
     const { deckId } = useParams();
-    const navigation = useNavigate();
+    const navigate = useNavigate();
     const abortController = new AbortController();
     const initialState = {
         front: "",
@@ -39,13 +39,13 @@ export const AddCard = () => {
         const response = createCard(
             deckId, { ...newCard }, abortController.signal
         );
-        navigation(0);
+        navigate(0);
         setNewCard(initialState);
         return response;
     }
 
     function handleDone() {
-        navigation.navigate(`/decks/${deckId}`);
+        navigate(`/decks/${deckId}`);
     }
 
     return (

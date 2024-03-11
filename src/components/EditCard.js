@@ -4,7 +4,7 @@ import { readCard, readDeck, updateCard } from "../utils/api/index";
 
 export const EditCard = () => {
     const { deckId, cardId } = useParams();
-    const navigation = useNavigate();
+    const navigate = useNavigate();
     const abortController = new AbortController();
     const initialDeckState = {
         id: "",
@@ -46,12 +46,12 @@ export const EditCard = () => {
     function handleSubmit(event) {
         event.preventDefault();
         const response = updateCard({ ...card }, abortController.signal)
-        navigation.navigate(`/decks/${deckId}`);
+        navigate(`/decks/${deckId}`);
         return response;
     }
 
     function handleCancel() {
-        navigation.navigate(`/decks/${deckId}`);
+        navigate(`/decks/${deckId}`);
     }
 
     return (

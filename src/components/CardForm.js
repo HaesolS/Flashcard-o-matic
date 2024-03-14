@@ -27,7 +27,7 @@ export const CardForm = ({ card, handleDone, handleChange, handleSubmit }) => {
                     <button className="btn btn-secondary" onClick={handleDone}>
                     {card.id ? 'Cancel' : 'Done'}
                 </button>
-                <button className="btn btn-primary" type="submit">
+                <button className="btn btn-primary" type="submit" onClick={handleSubmit}>
                     Save
                 </button>
             </form>

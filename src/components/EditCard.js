@@ -36,7 +36,7 @@ export const EditCard = () => {
             };
         }
     fetchData();
-    }, []);
+    }, [cardId, deckId]);
 
     function handleDone() {
         navigate(`/decks/${deckId}`);
@@ -49,7 +49,7 @@ export const EditCard = () => {
     function handleSubmit(event) {
         event.preventDefault();
         const cardResponse = updateCard({ ...card }, abortController.signal);
-            navigate(0);
+            navigate(`/decks/${deckId}`);
             return cardResponse;
         }
 

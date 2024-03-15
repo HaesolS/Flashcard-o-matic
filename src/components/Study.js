@@ -46,7 +46,7 @@ export const Study = () => {
             setCardNumber(1);
             setFront(true);
             } else {
-            navigate.pushState("/");
+            navigate("/");
             }
         }
     }
